@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    <TextView
+        android:id="@+id/sumCharInLine"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:hint="Кол-во символов в строках"
+        android:textColor="	#1E90FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/sumWordsInLine"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:hint="Количество слов в строках"
+        android:textColor="	#1E90FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumCharInLine"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="Отчет по тексту"
+        android:textColor="	#00008B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/wordsFiveChars"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:hint="Количество слов из 5 букв"
+        android:textColor="	#1E90FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumWordsInText"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/sumCharInText"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:hint="Количество букв л в тексте"
+        android:textColor="	#1E90FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordsGlue"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <TextView
+        android:id="@+id/sumWordsInText"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:hint="Количество слов в тексте"
+        android:textColor="	#1E90FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumWordsInLine"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/wordsGlue"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:hint="Строка из слов на т"
+        android:textColor="	#1E90FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordsFiveChars"
+        app:layout_constraintVertical_bias="0.211" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
